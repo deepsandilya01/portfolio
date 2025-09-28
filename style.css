@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Sheryians";
+  src: url("Sheryians.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  /* Background image */
+  background-image: url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80");
+
+  background-size: cover; /* image pura cover kare */
+  background-position: center; /* center align */
+  background-attachment: fixed; /* scroll karne par bhi fixed rahe */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dp {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden; /* important: outside parts hide hongi */
+  display: inline-block;
+}
+.heading {
+  color: rgb(255, 254, 255);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 4px rgba(144, 6, 68, 0.878),
+    -2px -2px 4px rgba(255, 0, 89, 0.947);
+  background-color: rgba(5, 28, 110, 0.793);
+}
+
+.info {
+  color: rgb(141, 141, 142);
+}
+
+.about_me {
+  text-align: center;
+  color: rgb(10, 40, 46);
+  font-family: Sheryians;
+  background-color: rgba(232, 234, 234, 0.62);
+  padding: 20px; /*ander thoda gap alyega */
+  border-radius: 10px; /*corner round karega*/
+  margin: 20px auto; /* center me le jayega*/
+  width: 90%; /*kitna area lena hai */
+}
+
+.education {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: Sheryians;
+  background-color: rgba(8, 226, 222, 0.309);
+  padding: 20px; /*ander thoda gap alyega */
+  border-radius: 10px; /*corner round karega*/
+  margin: 20px auto; /* center me le jayega*/
+  width: 90%; /*kitna area lena hai */
+}
+
+.education01 {
+  font-size: large;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: Sheryians;
+  background-color: rgba(232, 234, 234, 0.62);
+  padding: 20px; /*ander thoda gap alyega */
+  border-radius: 10px; /*corner round karega*/
+  margin: 20px auto; /* center me le jayega*/
+  width: 80%; /*kitna area lena hai */
+  
+}
+
+.skills {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: Sheryians;
+  background-color: rgba(222, 8, 226, 0.195);
+  padding: 20px; /*ander thoda gap alyega */
+  border-radius: 10px; /*corner round karega*/
+  margin: 20px auto; /* center me le jayega*/
+  width: 90%; /*kitna area lena hai */
+}
+
+.projects {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: Sheryians;
+  background-color: rgba(255, 12, 12, 0.28);
+  padding: 20px; /*ander thoda gap alyega */
+  border-radius: 10px; /*corner round karega*/
+  margin: 20px auto; /* center me le jayega*/
+  width: 90%; /*kitna area lena hai */
+}
+
+.contract {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: Sheryians;
+  background-color: rgba(8, 226, 222, 0.309);
+  padding: 20px; /*ander thoda gap alyega */
+  border-radius: 10px; /*corner round karega*/
+  margin: 20px auto; /* center me le jayega*/
+  width: 90%; /*kitna area lena hai */
+}
+
+.contact-box {
+  display: flex; /* andar ke items (links) ek hi line me aa gaye */
+  justify-content: center; /* unko horizontally center align kar diya */
+  gap: 15px; /* har button ke beech 15px ka space */
+  background: #e0f7fa67; /* poore box ka background light blue */
+  padding: 20px; /* andar ki taraf 20px ka space (buttons edge se chipke na rahe) */
+  border-radius: 10px; /* box ke corners rounded ho gaye */
+}
+
+.contact-box a {
+  padding: 10px 20px; /* har button ke andar spacing (top-bottom 10px, left-right 20px) */
+  background: rgba(232, 234, 234, 0.62); /* button ka background white */
+  border-radius: 8px; /* button ke corners gol ho gaye */
+  text-decoration: none; /* link ke neeche underline hata di */
+  color: #333; /* text color dark gray */
+  font-weight: 500; /* thoda mota (semibold) font */
+  transition: 0.3s; /* hover effect smoothly 0.3 second me chalega */
+}
+
+.contact-box a:hover {
+  background: #0077b6; /* mouse le jane par blue background */
+  color: white; /* text white ho jayega */
+}
