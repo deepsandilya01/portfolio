@@ -3,6 +3,28 @@
   src: url("Sheryians.woff2");
 }
 
+@media (max-width: 768px) {
+  .about_me,
+  .education,
+  .skills,
+  .projects,
+  .contract {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .education01 {
+    width: 95%;
+    font-size: 14px;
+  }
+
+  .contact-box a {
+    width: 45%;
+    min-width: unset; /* width auto adjust karega */
+  }
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +35,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden; /*side scroll disable karega*/
 }
 
 body {
@@ -26,7 +49,7 @@ body {
 
   background-size: cover; /* image pura cover kare */
   background-position: center; /* center align */
-  background-attachment: fixed; /* scroll karne par bhi fixed rahe */
+  background-attachment: scroll; /* scroll karne par bhi fixed rahe */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -75,15 +98,17 @@ body {
 }
 
 .education01 {
-  font-size: large;
+  font-size: 1rem;
   text-align: center;
   color: rgb(0, 0, 0);
   font-family: Sheryians;
   background-color: rgba(232, 234, 234, 0.62);
-  padding: 20px; /*ander thoda gap alyega */
+  padding: px; /*ander thoda gap alyega */
   border-radius: 10px; /*corner round karega*/
-  margin: 20px auto; /* center me le jayega*/
+  margin: 10px auto; /* center me le jayega*/
   width: 80%; /*kitna area lena hai */
+  box-sizing: border-box;
+  max-width: 500px; /* Desktop par limit */
   
 }
 
@@ -122,11 +147,14 @@ body {
 
 .contact-box {
   display: flex; /* andar ke items (links) ek hi line me aa gaye */
+  flex-wrap: wrap; /* Mobile par next line me chale jayenge */
   justify-content: center; /* unko horizontally center align kar diya */
   gap: 15px; /* har button ke beech 15px ka space */
   background: #e0f7fa67; /* poore box ka background light blue */
   padding: 20px; /* andar ki taraf 20px ka space (buttons edge se chipke na rahe) */
   border-radius: 10px; /* box ke corners rounded ho gaye */
+  max-width: 100%; /* Overflow prevent karega */
+  box-sizing: border-box;
 }
 
 .contact-box a {
@@ -137,6 +165,9 @@ body {
   color: #333; /* text color dark gray */
   font-weight: 500; /* thoda mota (semibold) font */
   transition: 0.3s; /* hover effect smoothly 0.3 second me chalega */
+  display: block; /* Mobile par button properly behave karega */
+  text-align: center;
+  min-width: 100px; /* Button too small na ho */
 }
 
 .contact-box a:hover {
@@ -148,6 +179,6 @@ body {
     background-color: #162b45;
     color: white;
     padding: 15px 20px;
-    font-size: 0.9rem;
+    font-size: 11px;
     justify-items: center;
 }
