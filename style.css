@@ -143,3 +143,11 @@ body {
   background: #0077b6; /* mouse le jane par blue background */
   color: white; /* text white ho jayega */
 }
+
+.footer {
+    background-color: #162b45;
+    color: white;
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    justify-items: center;
+}
